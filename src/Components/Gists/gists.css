@@ -1,0 +1,38 @@
+.marked-fork {
+  color: blue;
+}
+.marked-star {
+  color: rgb(198, 0, 216);
+}
+.user-details {
+  /* display: flex; */
+  /* margin: 0px; */
+}
+.name {
+  margin: 10px;
+}
+.created {
+  margin: 5px 10px;
+}
+.action-btn {
+  position: relative;
+  z-index: 31;
+  float: right;
+  margin: 0;
+}
+.gist-info {
+  margin: 65px 230px;
+}
+.back-btn {
+  background-color: #15a699 !important;
+  color: aliceblue !important;
+  border-radius: 7px !important;
+  width: 70px;
+}
+.back-btn:hover {
+  /* background-color: #15a699 !important; */
+  color: rgb(54, 37, 37) !important;
+}
+.class-star {
+  font-weight: bolder;
+}

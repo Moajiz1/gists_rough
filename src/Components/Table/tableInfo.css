@@ -1,0 +1,16 @@
+.custom-table .ant-table-row:hover {
+  cursor: pointer;
+}
+.user-img {
+  height: 50px;
+  border-radius: 25px;
+}
+.custom-table {
+  margin: 100px;
+}
+.table-parent {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin: -50px 45px 0px -5px;
+}

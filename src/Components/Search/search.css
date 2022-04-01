@@ -1,0 +1,23 @@
+/* .navbar {
+    height: 60px;
+    background-color: rgba(57, 204, 135, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  } */
+.listi {
+  margin: 0 0px -40px 240px;
+}
+.ant-input {
+  /* background-color: black; */
+}
+.ant-input {
+  border-radius: 5px !important;
+}
+.ant-btn {
+  border-radius: 5px !important;
+}
+.ant-input-group-addon {
+  background: none !important;
+}

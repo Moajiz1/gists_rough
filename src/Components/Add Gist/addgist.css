@@ -1,0 +1,48 @@
+.form-div {
+  margin: 23px 0px 55px 0px;
+}
+.gist-desc-form {
+  margin: 10px 315px;
+  width: 60%;
+}
+
+.gist-file-form {
+  margin: 1px 315px;
+  width: 60%;
+}
+
+.gist-content-form {
+  margin: 1px 315px;
+  width: 60%;
+  height: 200px;
+}
+.btn-create {
+  /* margin: 0px 310px; */
+  bottom: 38px;
+  background-color: rgb(21 166 153);
+}
+.btn-add {
+  /* margin: 0px 310px; */
+  bottom: 38px;
+  background-color: rgb(21 166 153);
+}
+.add-heading {
+  /* display: flex; */
+  align-items: center;
+  margin-left: 320px;
+  color: rgb(9 202 112);
+  /* border: 2px solid rgb(9 202 112); */
+  display: inline-block;
+  border-radius: 5px;
+  /* background-color: rgb(71, 6, 6); */
+}
+.privacy-check {
+  width: 120;
+  margin-left: 320;
+}
+.cont {
+  margin: 61px 300px 20px 157px;
+}
+.width {
+  width: 255vh;
+}

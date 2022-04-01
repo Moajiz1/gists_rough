@@ -1,0 +1,24 @@
+h1 {
+  /* display: flex; */
+  align-items: center;
+  margin-left: 320px;
+  color: rgb(9 202 112);
+}
+
+h3 {
+  /* display: flex; */
+  align-items: center;
+  margin-left: 320px;
+  color: rgb(19, 112, 69);
+}
+
+.btn-update {
+  background-color: rgb(21 166 153);
+}
+.btn-back {
+  background-color: rgb(21 166 153);
+}
+.basic-btn {
+  margin: 0px 310px;
+  border-radius: 5px;
+}

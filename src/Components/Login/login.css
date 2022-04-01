@@ -1,0 +1,24 @@
+.fa-star-o{
+    margin: 10px;
+    color: aquamarine;
+}
+.fa-flag-o{
+    color: aquamarine;
+}
+.btn-login{
+    height: 15px;
+    width: 80px;
+    padding: 14px 15px;
+    border-radius: 5px;
+    border: 3px solid #dcdcdc;
+    color: #dcdcdc;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0px -35px;
+    color: rgba(57, 204, 135, 0.7);
+}
+.btn-login:hover{
+    color: rgb(140, 137, 137);
+}

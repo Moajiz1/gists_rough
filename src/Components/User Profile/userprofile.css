@@ -1,0 +1,104 @@
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 90%;
+  height: 75%;
+  /* -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1); */
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right {
+  height: 90vh;
+}
+.left {
+  height: 50vh;
+}
+.center {
+  height: 100vh;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.line {
+  width: 0.5px;
+  height: 90%;
+  background-color: lightgray;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.icon {
+  width: 176px;
+  height: 176px;
+  border-radius: 90px;
+}
+
+input {
+  width: 200px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.name {
+  margin-top: 2px;
+  margin-bottom: 2em;
+}
+.btn-profile {
+  margin-bottom: 100px;
+}
+
+.gist-div {
+  /* width: 86vh; */
+}
+
+.flex {
+  height: 100vh;
+}
+.user-details {
+  height: 90vh;
+}
+
+.btn-delete {
+  margin-right: 10px;
+}
+.btn {
+  border-radius: 10px;
+  width: 35px;
+}
+.btn-delete:hover {
+  color: red;
+}
+.btn-container {
+  margin-left: 300px;
+  display: block;
+}
+.icon {
+  margin: 0 -87px;
+}

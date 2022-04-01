@@ -1,0 +1,589 @@
+ // const {filename}=response.data.files;
+    // setDataGet(filename);
+    // console.log(response.data.files);
+    // const {files: {content} } = response.data;
+    // console.log(content);
+  // setDataSource(res.filter((el)=>el.id !== user.id));
+
+
+
+  // const updateGist = new Octokit({ auth: `${localToken}` });
+
+
+  // const update=async(gist)=>{  await updateGist.request(`PATCH /gists/${gist.id}`, gist{
+  //     description: gistForm?.description,
+  //     // files: gistForm?.filename,
+  //     files: {
+  //               [gistForm?.filename] : {
+  //                 content: gistForm?.content
+  //               }
+  //             }
+  //   })
+  // }
+
+   // const gUpdate=()=> {
+  //   if (gistForm) {
+  //       update({
+  //       description: gistForm?.description,
+  //       // public: gistForm?.privacy,
+  //       files: {
+  //         [gistForm?.filename] : {
+  //           // content: gistForm?.content
+  //         }
+  //       }
+  //     });
+  //   } else {
+  //     alert('Please enter in content to POST to a new Gist.');
+  //   }
+  // }
+  // console.log(props.dataGet);
+
+  // const handleClick=async (user)=>{
+  //   const response= await gistForkss.request(`PATCH /gists/${user.id}` ,{
+  //     gist_id: "user.id",
+  //   })
+  //   const {description}= await response.data;
+  //   setDataGet(description);
+  //   console.log(dataGet);
+  // // setDataSource(res.filter((el)=>el.id !== user.id));
+  // }
+  
+    {/* <Form.Item label="" required tooltip="This is a required field">
+      <h3 className='text-identifier'>File Name</h3>
+        <Input defaultValue={filename} className="gist-file-form" placeholder="Enter File Name..." onChange={inputFileHandler}/>
+      </Form.Item> */}
+
+      // const inputFileHandler = (e) => {
+      //   // setGistForm(e.target.value);
+      //   setGistForm((prevState) => {
+      //     return {
+      //       ...prevState,
+      //       filename: e.target.value,
+      //     };
+      //   });
+      // };
+  
+
+      
+  //   const update=async(gist)=>{  await updateGist.request(`PATCH /gists/${gist.id}`,{
+  //     description: gistForm?.description,
+  //     // files: gistForm?.filename,
+  //     files: {
+  //               [gistForm?.filename] : {
+  //                 content: gistForm?.content
+  //               }
+  //             }
+  //   })
+  //   alert("Gist Updated");
+  //   navigate('/');
+
+  // }
+
+  // const update=(opts)=> {
+  //   console.log('Posting request to GitHub API...');
+  //   fetch(`${baseUrl}/gists/${dataGet.id}`, {
+  //     method: 'PATCH',
+  //     headers: {
+  //         'Accept': 'application/json',
+  //         'Content-Type': 'application/json',
+  //         Authorization: `token ${localToken}`,
+  //       },
+  //     body: JSON.stringify(opts)
+  //   }).then(function(response) {
+  //     return response.json();
+  //   }).then(function(data) {
+  //     console.log('Update Gist:', data.html_url);
+  //     alert("Check console for Update gist's link")
+  //   });
+  // }
+
+
+    // let navigate=useNavigate();
+
+  // const gistRecords = async (user) => {
+  //   const data = await axios({
+  //     url: `${baseUrl}/gists/${user.id}`,
+  //   }).then((res) => res.data);
+  //   // return data;
+  //   setDataGet(data);
+  //   setUserExist(true);
+  //   // navigate('/updategist');
+  // };
+  // console.log(dataGet);
+  // console.log(userExist);
+
+  // let navigate=useNavigate();
+  // const handleClick=async (user)=>{
+  //   navigate('/updategist');
+  //   const response= await gistForkss.request(`GET /gists/${user.id}` ,{
+  //     gist_id: "user.id",
+  //   })
+  //   const {description}= await response.data;
+  //   setDataGet(description);
+  //   console.log(dataGet);
+  // // setDataSource(res.filter((el)=>el.id !== user.id));
+  // }
+
+  
+  // const gistStar = async () => {
+  //   if (localToken && isOk.star) {
+  //     await gistForkss.request(`delete /gists/${data.id}/star`, {
+  //       gist_id: "gistClick",
+  //     })(
+  //       setIsOk((prevState) => {
+  //         return {
+  //           ...prevState,
+  //           star: false,
+  //         };
+  //       })
+  //     );
+  //     alert("Gist UnStared");
+  //   } else if (localToken && !isOk.star) {
+  //     await gistForkss.request(`PUT /gists/${data.id}/star`, {
+  //       gist_id: "gistClick",
+  //     });
+  //     setIsOk((prevState) => {
+  //       return {
+  //         ...prevState,
+  //         star: true,
+  //       };
+  //     });
+  //     alert("Gist Stared");
+  //   } else {
+  //     alert("First login");
+  //   }
+  // };
+
+    // const gistFork = async () => {
+  //   localToken
+  //     ? await gistForkss.request(`POST /gists/${data.id}/forks`)(
+  //         setIsOk((prevState) => {
+  //           return {
+  //             ...prevState,
+  //             fork: true,
+  //           };
+  //         })
+  //       )
+  //     : setIsOk((prevState) => {
+  //         return {
+  //           ...prevState,
+  //           fork: false,
+  //         };
+  //       });
+  //   alert("First login");
+  // };
+
+  // const isOk=false;
+
+  // const dataOfUser = useContext(BioData);
+  // const data = dataOfUser;
+  // console.log(data);
+
+  // const handleStar = (e) => {
+  //   e.preventDefault();
+  //   gistStar();
+  //   console.log("Stared a gist");
+  // };
+
+  // const handleFork = (e) => {
+  //   e.preventDefault();
+  //   gistFork();
+  //   console.log("fork a gist");
+  // };
+
+
+
+
+
+  // export const fetchRecordsBack = async (page, per_page) => {
+  //   // setLoading(true);
+  //   const dataa = await axios
+  //     .get(`${baseUrl}/gists?page=${page}&per_page=${per_page}`)
+  //     .then((res) => res.data);
+  //   return dataa;
+  // };
+
+  // export const editRecord = async (user) => {
+  //   const data = await axios({
+  //     url: `${baseUrl}/gists/${user.id}`,
+  //   }).then((res) => res.data);
+  //   return data;
+  // };
+  
+  
+// export const tableRecords = async (p) => {
+//   const data = await axios({
+//     url: `${baseUrl}/gists`,
+//     // params: { per_page: 50 },
+//     params: { page: p },
+//   }).then((res) => res.data);
+//   return data;
+// };
+
+// export const tableRecordsTwo = async (p) => {
+//   const data = await axios({
+//     url: `${baseUrl}/gists/public`,
+//     params: { per_page: 12 },
+//     params: { page: p },
+//   }).then((res) => res.data);
+//   console.log(data);
+//   return data;
+// };
+
+
+//search  valaa
+// const fetchGist = (userId) => {
+//   if (userId) {
+//     fetch(`https://api.github.com/gists/${userId}`).then((res) => {
+//       res.json().then((response) => {
+//         console.log(response.message);
+//         if (response.message !== "Not Found") setDataSource([response]);
+//         else setDataSource([]);
+//       });
+//     });
+//   } else {
+//     axios({
+//       method: "get",
+//       url: `https://api.github.com/gists`,
+//       params: { per_page: 40 },
+//     }).then((res) => {
+//       // setLoading(true);
+//       setDataSource(res.data);
+//     });
+//   }
+// };
+
+
+
+  // const fetchGist = (userId) => {
+  //   if (userId) {
+  //     fetch(`https://api.github.com/gists/${userId}`).then((res) => {
+  //       res.json().then((response) => {
+  //         console.log(response.message);
+  //         if (response.message !== "Not Found") setDataSource([response]);
+  //         else setDataSource([]);
+  //       });
+  //     });
+  //   } else {
+  //     axios({
+  //       method: "get",
+  //       url: `https://api.github.com/gists`,
+  //       params: { per_page: 40 },
+  //     }).then((res) => {
+  //       // setLoading(true);
+  //       setDataSource(res.data);
+  //     });
+  //   }
+  // };
+
+  // export const searchGistdd = async (userId) => {
+//   if (userId) {
+//     const data = fetch(`https://api.github.com/gists/${userId}`)
+//       .then((response) => {
+//         return response.json();
+//       })
+//       .then((res) => {
+//         return res;
+//       });
+//     return data;
+//   } else {
+//     const dataa = await fetch(`${baseUrl}/gists?page=1&per_page=10`, {
+//       method: "get",
+//     })
+//       .then((response) => {
+//         return response.json();
+//       })
+//       .then((response) => {
+//         return response;
+//       });
+//     return dataa;
+//   }
+// };
+
+// export const fetchGist = async (userId) => {
+//   if (userId) {
+//     const dataa = await axios({
+//       method: "get",
+//       url: `${baseUrl}/gists/${userId}`,
+//     }).then((res) => res.data);
+//     console.log(dataa);
+//     return dataa;
+//   } else {
+//     const dataa = await axios({
+//       method: "get",
+//       url: `${baseUrl}/gists`,
+//       params: { per_page: 40 },
+//     }).then((res) => res.data);
+//     console.log(dataa);
+//     return dataa;
+//   }
+// };
+
+
+
+
+
+// export const forkAGists = async (id) => {
+//   const dataa = await fetch(`${baseUrl}/gists/${id}/forks`, {
+//     method: "post",
+//     headers: {
+//       Accept: "application/json",
+//       "Content-Type": "application/json",
+//       Authorization: `token ${localToken}`,
+//     },
+//   })
+//     .then((response) =>
+//       response.json().then((res) => {
+//         console.log(res);
+//         // return res.message;
+//       })
+//     )
+//     .then((resp) => {
+//       console.log(resp);
+//     });
+//   return dataa;
+// };
+
+
+
+
+
+
+// const onFinish = (values) => {
+//   console.log('Success:', values);
+// };
+
+// const onFinishFailed = (errorInfo) => {
+//   console.log('Failed:', errorInfo);
+// };
+
+// <div className="cont">
+// <Form
+//   name="basic"
+//   labelCol={{
+//     span: 8,
+//   }}
+//   wrapperCol={{
+//     span: 16,
+//   }}
+//   initialValues={{
+//     remember: true,
+//   }}
+//   onFinish={onFinish}
+//   onFinishFailed={onFinishFailed}
+//   autoComplete="off"
+// >
+//   <Form.Item
+//     label="Username"
+//     name="username"
+//     rules={[
+//       {
+//         required: true,
+//         message: "Please input your username!",
+//       },
+//     ]}
+//   >
+//     <Input />
+//   </Form.Item>
+
+//   <Form.Item
+//     label="Password"
+//     name="password"
+//     rules={[
+//       {
+//         required: true,
+//         message: "Please input your password!",
+//       },
+//     ]}
+//   >
+//     <Input.Password />
+//   </Form.Item>
+
+//   <Form.Item
+//     name="remember"
+//     valuePropName="checked"
+//     wrapperCol={{
+//       offset: 8,
+//       span: 16,
+//     }}
+//   >
+//     <Checkbox>Remember me</Checkbox>
+//   </Form.Item>
+
+//   <Form.Item
+//     wrapperCol={{
+//       offset: 8,
+//       span: 16,
+//     }}
+//   >
+//     <Button type="primary" htmlType="submit">
+//       Submit
+//     </Button>
+//   </Form.Item>
+
+//   <Form.Item
+//     wrapperCol={{
+//       offset: 8,
+//       span: 16,
+//     }}
+//   >
+//     <Button type="primary" htmlType="submit">
+//       Submit
+//     </Button>
+//   </Form.Item>
+// </Form>
+
+
+
+<Form labelCol={{
+          span: 8,
+        }}
+        wrapperCol={{
+          span: 16,
+        }} >
+        <div className="form-div">
+          <h1 className="add-heading">Add Gist</h1>
+          <Form.Item label="" required tooltip="This is a required field">
+            <Input
+              className="gist-desc-form"
+              placeholder="Enter Gist description..."
+              value={description}
+              onChange={inputDescHandler}
+            />
+          </Form.Item>
+
+          <Form.Item label="" required tooltip="This is a required field">
+            <Input
+              className="gist-file-form"
+              placeholder="Enter File Name..."
+              value={filename}
+              onChange={inputFileHandler}
+            />
+          </Form.Item>
+
+          <Form.Item label="" required tooltip="This is a required field">
+            <TextArea
+              rows="7"
+              className="gist-content-form"
+              placeholder="Enter File Content"
+              value={content}
+              onChange={inputContentHandler}
+            />
+          </Form.Item>
+
+          <Select
+            defaultValue="Public"
+            style={{ width: 120, marginLeft: 320 }}
+            onChange={privacyCheck}
+          >
+            <Option value="true">Public</Option>
+            <Option value="false">Private</Option>
+          </Select>
+        </div>
+        <Form.Item
+          wrapperCol={{
+            offset: 0,
+            span: 16,
+          }}
+        >
+          <Button
+            className="btn-create basic-btn"
+            type="primary"
+            onClick={submitGist}
+          >
+            Create Gist
+          </Button>
+        </Form.Item>
+        s
+        <Form.Item
+          wrapperCol={{
+            offset: 0,
+            span: 16,
+          }}
+        >
+          <Button
+            className="btn-add basic-btn"
+            type="primary"
+            onClick={backBtn}
+          >
+            <i className="fa fa-arrow-left"></i>Back
+          </Button>
+        </Form.Item>
+      </Form>
+
+
+
+
+
+// Weekend LAst
+    //   <div className="cont">
+    //   <Form
+    //     labelCol={{
+    //       span: 8,
+    //     }}
+    //     wrapperCol={{
+    //       span: 16,
+    //     }} 
+    //   >
+    //     <h1 className="add-heading">Add Gist</h1>
+
+    //     <Form.Item label="Description" name="Description">
+    //       <Input
+    //         placeholder="Enter Gist description..."
+    //         value={description}
+    //         onChange={inputDescHandler}
+    //       />
+    //     </Form.Item>
+
+    //     <Form.Item label="File" name="file">
+    //       <Input
+    //         placeholder="Enter File Name..."
+    //         defaultValue={filename}
+    //         onChange={inputFileHandler}
+    //       />
+    //     </Form.Item>
+
+    //     <Form.Item label="Content" name="Content">
+    //       <TextArea
+    //         rows="7"
+    //         // className="gist-content-form"
+    //         placeholder="Enter File Content"
+    //         defaultValue={content}
+    //         onChange={inputContentHandler}
+    //       />
+    //     </Form.Item>
+
+    //     <Form.Item
+    //       wrapperCol={{
+    //         offset: 8,
+    //         span: 16,
+    //       }}
+    //     >
+    //       <Select defaultValue="Public" onChange={privacyCheck}>
+    //         <Option value="true">Public</Option>
+    //         <Option value="false">Private</Option>
+    //       </Select>
+    //     </Form.Item>
+    //     <Form.Item
+    //       wrapperCol={{
+    //         offset: 8,
+    //         span: 16,
+    //       }}
+    //     >
+    //       <Button style={btnStyle} type="primary" onClick={submitGist}>
+    //         Submit
+    //       </Button>
+    //     </Form.Item>
+
+    //     <Form.Item
+    //       wrapperCol={{
+    //         offset: 8,
+    //         span: 16,
+    //       }}
+    //     >
+    //       <Button onClick={backBtn} type="primary" style={btnStyle}>
+    //         <i className="fa fa-arrow-left"></i>Back
+    //       </Button>
+    //     </Form.Item>
+    //   </Form>
+    // </div>
