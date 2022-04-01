@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="des" cols="30" rows="5">enter desc here </textarea>
+    <!-- <textarea name="" id="file" cols="30" rows="5">enter file name here </textarea>
+    <textarea name="" id="" cols="30" rows="10">enter gist content here </textarea> -->
+    <button id="button" class="button">Create gist Submit</button>
+    
+</body>
+<script>
+    var token = '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';
+    // var desc=document.getElementById('des')
+    // var filee=document.getElementById('file')
+    // var content=document.getElementById('content')
+    var file={fi:'file.py',
+    desc: "Creating py biatch"}
+
+
+    function createGist(opts) {
+  console.log('Posting request to GitHub API...');
+  fetch('https://api.github.com/gists', {
+    method: 'post',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        Authorization: `token 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`,
+      },
+    body: JSON.stringify(opts)
+  }).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    console.log('Created Gist:', data.html_url);
+  });
+}
+
+
+function submitGist() {
+  var content = document.querySelector('textarea').value;
+  if (content) {
+    createGist({
+      description: file.desc,
+      public: false,
+      files: {
+        [file.fi] : {
+          content: content
+        }
+      }
+    });
+  } else {
+    alert('Please enter in content to POST to a new Gist.');
+  }
+}
+
+var submitBtn = document.querySelector('button');
+submitBtn.addEventListener('click', submitGist);
+</script>
+</html>
